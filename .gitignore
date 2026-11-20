@@ -1,0 +1,7 @@
+# 密钥绝不入库：由 DATAXAPI_API_KEY 环境变量（平台 Secrets）注入
+state/secrets/
+# 每日重建的中间产物，不入库
+state/out/
+state/snapshots/
+state/input/douyin-latest.json
+node_modules/
