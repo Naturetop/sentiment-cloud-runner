@@ -1,0 +1,58 @@
+name: 每日公开内容情绪快照
+
+on:
+  schedule:
+    # 北京时间 18:30 = UTC 10:30
+    - cron: '30 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-snapshot
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 采集并生成当日快照
+        env:
+          DATAXAPI_API_KEY: ${{ secrets.DATAXAPI_API_KEY }}
+          SNAPSHOT_WORK_DIR: ${{ github.workspace }}/state
+          TZ: Asia/Shanghai
+        run: node collect.mjs
+
+      # 候选池、粉丝数缓存与每日产物必须跨次持久化，否则每天都要全量发现，
+      # 接口费用会从约 42 次 / $0.084 回到 72 次 / $0.288 甚至更高。
+      # 仓库务必设为私有：候选名单不公开，密钥只走 Secrets、绝不入库。
+      - name: 回写状态与快照产物
+        run: |
+          git config user.name "snapshot-bot"
+          git config user.email "snapshot-bot@users.noreply.github.com"
+          git add state/input public
+          git diff --cached --quiet || git commit -m "daily snapshot $(date +%F)"
+          git push
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: 发布 Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
