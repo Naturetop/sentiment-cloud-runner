@@ -1,0 +1,13 @@
+{
+  "kind": "file",
+  "douyinAdapter": true,
+  "path": "state/input/douyin-latest.json",
+  "sourceLabel": "",
+  "coverageNote": "",
+  "compliance": {
+    "noScraping": true,
+    "noBypassOfAccessControl": true,
+    "fieldsMinimized": true,
+    "note": "云端定时运行包。密钥由 DATAXAPI_API_KEY 环境变量注入（托管平台 Secrets），不落盘、不进仓库；候选池与粉丝缓存持久化在 state/input/douyin-creators.json 并回写私有仓库。数据来自第三方公开数据接口，非抖音官方授权，仅用于公开内容措辞统计，不含行情、不预测涨跌、不构成任何操作建议。"
+  }
+}
