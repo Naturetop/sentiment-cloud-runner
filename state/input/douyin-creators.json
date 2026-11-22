@@ -1,0 +1,261 @@
+{
+  "generatedAt": "2026-11-18T04:07:13.371Z",
+  "lastDiscoverAt": "2026-11-18T04:07:13.371Z",
+  "source": "第三方公开数据接口（DataXAPI）· 抖音视频搜索，取数时间 2026-11-18 12:07:13 +08:00",
+  "note": "本名单由关键词搜索自动产出并跨轮合并，仅供候选，不代表粉丝量排名。必须人工复核：剔除带货/娱乐/非财经账号，确认内容确与 A 股相关，再投入使用。followers_hint 为搜索返回值，正式排序以 users.get 为准。",
+  "keywords": [
+    "A股复盘",
+    "财经",
+    "大盘分析",
+    "股市复盘",
+    "股票",
+    "行情分析",
+    "股评",
+    "A股"
+  ],
+  "candidateLimit": 60,
+  "candidates": [
+    {
+      "id": "MS4wLjABAAAAQVGEu73n0Rb2a0UL88_Z013T9q9N-PXc6I2gTzFyfl9ghuBZhJ7cvruWZd4xHt7u",
+      "name": "股仙小乔",
+      "followers_hint": 42598,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股复盘",
+      "addedAt": "2026-11-18",
+      "followers": 42604,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAfniskImDaeAPCo_eQRzwzmt7mgC62DXf3Qauef54F7TAsp7toJBp8Sgo51Tbrx3S",
+      "name": "掌财张张本尊",
+      "followers_hint": 43549,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股复盘",
+      "addedAt": "2026-11-18",
+      "followers": 43576,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAsrhrpbR77NP25px2kOXlQeMY26O6o9YWgjzDJzSkh3U",
+      "name": "橙子观市",
+      "followers_hint": 40674,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股复盘",
+      "addedAt": "2026-11-18",
+      "followers": 40719,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAA3LAfk-JdyR9DWR7ZCJyWYvy4UoCH4QwAdjV_eKC45A0MZZBB6Ez7Ns0Y1NaXGSqc",
+      "name": "扬哥聊大A",
+      "followers_hint": 246273,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股复盘",
+      "addedAt": "2026-11-18",
+      "followers": 246274,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAfQa0uGFkXcRWvot9efjJ44d79sSGNsImeQ91zw3yVnDE2wvoAQGIgDI6SVY0IvIF",
+      "name": "老郭主升派",
+      "followers_hint": 16068,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股复盘",
+      "addedAt": "2026-11-18",
+      "followers": 16078,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAA82IHtScs-vvmMmHpuc_ekwMpyc813SImU5ktR8mRBlw",
+      "name": "金融康博士",
+      "followers_hint": 53399,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股复盘",
+      "addedAt": "2026-11-18",
+      "followers": 53428,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAJc2tAhnkUYA38w2YkyqF4zXjLv185lJBgOGmmSIexk_LELaMtT-78CCZ_3NhuPCm",
+      "name": "红旗大街发哥",
+      "followers_hint": 514559,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股复盘",
+      "addedAt": "2026-11-18",
+      "followers": 514616,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAnQ9WojAs1R5SHsrp3AjOWjja7WGObh9nYqCKCBrxrsURRq8ZaAwoZqBez5mYW8bw",
+      "name": "李江涛财经说",
+      "followers_hint": 36542,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=财经",
+      "addedAt": "2026-11-18",
+      "followers": 36717,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAdRCy2802bgox10z3QqClTyHVwpLEFnMXek46zrOMx_w09K4WJs-5-Qqvu3ZLu7H3",
+      "name": "阿牛读财ANIU",
+      "followers_hint": 1022581,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=财经",
+      "addedAt": "2026-11-18",
+      "followers": 912394,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAApV8H3SuZZYaZOnOZCFDTZRUlDrspvR-ZlBAvrWPlfeI",
+      "name": "德龙财经",
+      "followers_hint": 1132919,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=财经",
+      "addedAt": "2026-11-18",
+      "followers": 556489,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAurscwQTyuUEZmxgzKesg-6n4uWRhrGhcTT_UP5_cj_qDB120Qw7EtVWPI29tQZzX",
+      "name": "财经岚澜",
+      "followers_hint": 170363,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=财经",
+      "addedAt": "2026-11-18",
+      "followers": 170356,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAL2jRNiLiY47VEMMmhSL2XBm9aF7D6mU0Js6TMe90Z4U",
+      "name": "许戈",
+      "followers_hint": 858914,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=大盘分析",
+      "addedAt": "2026-11-18",
+      "followers": 858975,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAhjdvAksEJhJrKFRlVkedOG8KzS6EL68Wfe8qB_hwfiQZipd9SAowUpK1q5vAj4yW",
+      "name": "小金",
+      "followers_hint": 294657,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=大盘分析",
+      "addedAt": "2026-11-18",
+      "followers": 294642,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAol0hbekWJIct8kyP3POPXR4CbXzTxOok6ekD-QaXxnxRC9Nz6EjsxpCkSsBZd8wa",
+      "name": "董学涨！",
+      "followers_hint": 522451,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=大盘分析",
+      "addedAt": "2026-11-18",
+      "followers": 522435,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAJDG2ZeyLjHapsZA-OXKkQkGtiP7n4Xg32nMK1SWNOWZ248PaU7wdO_hFPxOVYU-w",
+      "name": "杰哥",
+      "followers_hint": 1760262,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=大盘分析",
+      "addedAt": "2026-11-18",
+      "followers": 1688662,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAW2zne8UOpSY8YV_IrixgJ1m03QMKuFU1ZPicP68pAZ7laj-v724Ve1xJYQrS5J1m",
+      "name": "周期舵主y神",
+      "followers_hint": 3624,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=股市复盘",
+      "addedAt": "2026-11-18",
+      "followers": 3692,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAATf0YoXs01QazGQPV4Qsve1THhk-zLRI9DZUKPo30ZMhas28qp7ewDYsGNikhdKuV",
+      "name": "短线盘哥",
+      "followers_hint": 19194,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=股市复盘",
+      "addedAt": "2026-11-18",
+      "followers": 19203,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAODph1OlcIYE_N-AQDfvhIP1jdJuM1LZFhx5BSA2nvb-XCL_gYYU38AekD5Op9dgm",
+      "name": "亚当的做T日记",
+      "followers_hint": 2587,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=股市复盘",
+      "addedAt": "2026-11-18",
+      "followers": 2604,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAX3Bzw8mqEcGHlpROI6mCIibe7WWMsidTcg2H1a0CZJwFJK9f5wwX4si5Y5skkj7b",
+      "name": "江北嘴游侠-我数一二三传媒",
+      "followers_hint": 10802,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=股票",
+      "addedAt": "2026-11-18",
+      "followers": 10809,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAARwBxIyYJsguWZabp7KdYTkyatTtD_UbXXCJDsWdLm3arzPfANk63Acsb6NMG5Me6",
+      "name": "柒哥观潮",
+      "followers_hint": 6087,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=股票",
+      "addedAt": "2026-11-18",
+      "followers": 6141,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAf0C1gFEdMvoFGiiMUZbYQeLVpezDCv4fyNjWk9W2myE",
+      "name": "真如铁",
+      "followers_hint": 807391,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=股票",
+      "addedAt": "2026-11-18",
+      "followers": 668614,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    },
+    {
+      "id": "MS4wLjABAAAAfCT3p2g9nEkQLD4lkQ4qG5SZg_nfi4VCfr1d7uzGf9l213yWjU98pxtd_kfK0Td8",
+      "name": "股市黄药师",
+      "followers_hint": 39190,
+      "tag": "财经候选",
+      "source": "douyin.videos.search 关键词=A股",
+      "addedAt": "2026-11-18",
+      "followers": 36626,
+      "followers_at": "2026-11-18T04:07:10.899Z",
+      "followers_source": "users.get"
+    }
+  ]
+}
