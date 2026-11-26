@@ -47,7 +47,12 @@ function main() {
   ensure(path.join(WORK, 'secrets'));
 
   // 采集 → 新鲜度校验 → 构建统一契约；任一环节失败即非零退出
-  run(DAILY, ['--date', date]);
+  // 适配器调参由 SNAPSHOT_ADAPTER_ARGS 注入（默认空，行为与原来一致）。
+  // 这些参数经 daily-snapshot.mjs 透传给适配器，构建器用按名查找解析参数，
+  // 不认识的标志会被忽略，不影响快照产物。
+  const extraArgs = (process.env.SNAPSHOT_ADAPTER_ARGS || '')
+    .split(/\s+/).filter(Boolean);
+  run(DAILY, ['--date', date, ...extraArgs]);
 
   const src = path.join(WORK, 'snapshots', date + '.json');
   if (!fs.existsSync(src)) throw new Error('未找到当日快照：' + src);
