@@ -22,25 +22,33 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: true
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: '20'
+
+      - uses: actions/configure-pages@v6
 
       - name: 采集并生成当日快照
         env:
           DATAXAPI_API_KEY: ${{ secrets.DATAXAPI_API_KEY }}
           SNAPSHOT_WORK_DIR: ${{ github.workspace }}/state
           TZ: Asia/Shanghai
+          # 滚动发现日调用量会从约 42 次涨到 120 次以上，撞上限后白名单
+          # 无法回写，次日又触发发现，形成死循环。放宽上限并降低刷新频率。
+          SNAPSHOT_ADAPTER_ARGS: '--max-calls 220 --max-candidates 30 --refresh-followers-days 14 --discover-stale-days 14'
         run: node collect.mjs
 
       # 候选池、粉丝数缓存与每日产物必须跨次持久化，否则每天都要全量发现，
       # 接口费用会从约 42 次 / $0.084 回到 72 次 / $0.288 甚至更高。
       # 仓库务必设为私有：候选名单不公开，密钥只走 Secrets、绝不入库。
       - name: 回写状态与快照产物
+        # 采集失败时也要把滚动发现刷新过的候选池持久化，否则 lastDiscoverAt
+        # 永远停在旧日期，第二天又触发全量发现，连续失败无法自愈。
+        if: always()
         run: |
           git config user.name "snapshot-bot"
           git config user.email "snapshot-bot@users.noreply.github.com"
@@ -49,10 +57,10 @@ jobs:
           git push
 
       - name: 上传 Pages 产物
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
       - name: 发布 Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
